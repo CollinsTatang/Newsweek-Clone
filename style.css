@@ -165,3 +165,12 @@ a:hover {
 .opinion-wrap {
   border-bottom: 0.5px solid rgb(181, 204, 235);
 }
+
+/* The More stories Card */
+.ms-img {
+  margin-right: 1rem;
+}
+
+.more-stories-title {
+  font-size: 17px;
+}
