@@ -1,160 +1,159 @@
 body {
-    font-family: "Roboto Condensed", sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Newsweek background colors */
-  
-  .bg-red {
-    background-color: #ff0500;
-  }
-  
-  .bg-white {
-    background-color: #fff;
-  }
-  
-  .bg-black {
-    background-color: #000;
-  }
-  
-  .bg-yellow {
-    background-color: yellow;
-  }
-  
-  .bg-lighterarsh {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .bg-arsh {
-    background-color: rgb(181, 204, 235);
-  }
-  
-  /* Newsweek font colors */
-  
-  .color-red {
-    color: #ff0500;
-  }
-  
-  .color-white {
-    color: #fff;
-  }
-  
-  .color-black {
-    color: #000;
-  }
-  
-  .color-arsh {
-    color: rgb(80, 85, 92);
-  }
-  
-  .header {
-    font-family: "Fraunces", serif;
-    font-weight: bolder;
-    letter-spacing: -1.5px;
-  }
-  
-  .fa-user {
-    margin-left: auto;
-  }
-  
-  .round {
-    border-radius: 0.7rem;
-    padding: 0 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  .font-size-smallest {
-    font-size: 0.95rem;
-  }
-  
-  .category {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    padding: 8px 15px 9px;
-    margin-bottom: 0;
-    font-size: 1.05rem;
-    font-weight: 700;
-    opacity: 0.9;
-    text-transform: uppercase;
-  }
-  
-  .category-wrap {
-    position: relative;
-  }
-  
-  .category-title {
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  .title {
-    font-size: 20px;
-  }
-  
-  .summary {
-    font-size: 13px;
-  }
-  
-  /* The Debate Card */
-  .debate-author {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  
-  .debate-title {
-    font-size: 17px;
-    font-weight: 700;
-  }
-  
-  .debate-img2,
-  .debate-text1 {
-    float: right;
-  }
-  
-  .debate-img1,
-  .debate-text2 {
-    text-align: left;
-  }
-  
-  .debate-img2 {
-    width: 65px;
-  }
-  
-  .debate-hr {
-    border: solid rgb(80, 85, 92) 4px;
-    position: relative;
-    border-bottom: none;
-    color: #fff;
-  }
-  
-  .card-1 {
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .vs-debate {
-    position: absolute;
-    width: 33px;
-    text-align: center;
-    top: 52%;
-    left: 50%;
-  }
-  
-  /* The Opinion Card */
-  .opinion-wrap {
-    border-bottom: 0.5px solid rgb(181, 204, 235);
-  }
-  
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Newsweek background colors */
+
+.bg-red {
+  background-color: #ff0500;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-lighterarsh {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-arsh {
+  background-color: rgb(181, 204, 235);
+}
+
+/* Newsweek font colors */
+
+.color-red {
+  color: #ff0500;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-arsh {
+  color: rgb(80, 85, 92);
+}
+
+.header {
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  letter-spacing: -1.5px;
+}
+
+.fa-user {
+  margin-left: auto;
+}
+
+.round {
+  border-radius: 0.7rem;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.font-size-smallest {
+  font-size: 0.95rem;
+}
+
+.category {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 15px 9px;
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.category-wrap {
+  position: relative;
+}
+
+.category-title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.summary {
+  font-size: 13px;
+}
+
+/* The Debate Card */
+.debate-author {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.debate-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.debate-img2,
+.debate-text1 {
+  float: right;
+}
+
+.debate-img1,
+.debate-text2 {
+  text-align: left;
+}
+
+.debate-img2 {
+  width: 65px;
+}
+
+.debate-hr {
+  border: solid rgb(80, 85, 92) 4px;
+  position: relative;
+  border-bottom: none;
+  color: #fff;
+}
+
+.card-1 {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.vs-debate {
+  position: absolute;
+  width: 33px;
+  text-align: center;
+  top: 52%;
+  left: 50%;
+}
+
+/* The Opinion Card */
+.opinion-wrap {
+  border-bottom: 0.5px solid rgb(181, 204, 235);
+}
