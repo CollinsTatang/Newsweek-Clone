@@ -174,3 +174,7 @@ a:hover {
 .more-stories-title {
   font-size: 17px;
 }
+
+.more-stories-img {
+  height: 100px;
+}
