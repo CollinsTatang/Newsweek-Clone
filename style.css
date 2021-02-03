@@ -34,10 +34,6 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.bg-arsh {
-  background-color: rgb(181, 204, 235);
-}
-
 /* Newsweek font colors */
 
 .color-red {
@@ -81,6 +77,8 @@ a:hover {
 }
 
 .category {
+  display: block;
+  position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
@@ -151,6 +149,7 @@ a:hover {
 }
 
 .vs-debate {
+  position: absolute;
   width: 33px;
   text-align: center;
   top: 52%;
@@ -171,6 +170,8 @@ a:hover {
   font-size: 17px;
 }
 
-.more-stories-img {
-  height: 100px;
+.overlap {
+  position:absolute;
+  top: 20px;
+  left:70px;
 }
