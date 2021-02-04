@@ -5,7 +5,7 @@
 
 > Newsweek article Project
 
-![screenshot](asset/small-screen.png)
+![screenshot](assets/Screenshot.PNG)
 
 This project features HTML5 semantic tags, CSS and Bootstrap.
 
