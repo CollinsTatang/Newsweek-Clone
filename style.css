@@ -51,6 +51,10 @@ footer svg {
   fill: red;
 }
 
+.bg-dangerr {
+  background-color: red;
+}
+
 footer {
   z-index: 1;
 }
@@ -119,6 +123,6 @@ footer {
 
 @media (min-width: 992px) {
   .photo-large-screen {
-    height: 370px;
+    height: 335px;
   }
 }
