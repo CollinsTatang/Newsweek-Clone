@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Newsweek-Clone</title>
+</head>
+
+<body class="bg-white">
+  <div class="container-fluid mx-auto">
+    <header>
+      <nav>
+        <div class="top-nav1 d-none d-lg-flex row bg-dangerr py-3 text-white position-relative">
+          <div class="col-lg-3 d-flex flex-column align-self-end">
+            <p class="my-auto">Wed, Jan 20, 2021</p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center svg">
+            <svg version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
+              style="enable-background: new 0 0 395.6 60" xml:space="preserve">
+              <g>
+                <path class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center">
+            <i class="fas fa-user color-white d-block d-sm-none"></i>
+            <a href="#" class="nav-link ps-2 d-none d-sm-inline text-white btn-lg"><strong>LOGIN</strong></a>
+            <button class="subscribe-btn rounded-pill bg-warning">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+        <div class="top-nav1 d-none d-lg-flex middle-nav row border-bottom position-relative bg-white">
+          <div class="col-lg-12">
+            <ul class="d-flex justify-content-between py-3 fw-bolder">
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">U.S.</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">World</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Business</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Tect & Science</a>
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Culture</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Newsgeek</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Sports</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Health</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">The Debate</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Experts</a>|
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none px-1" href="#">Vantage</a>|
+              </li>
+              <li>
+                <input title="Enter the terms you wish to search for." placeholder="Search" type="text"
+                  name="search_block_form" value="" size="15" maxlength="128" class="form-text border-0 w-50" />
+                  <i class="fas fa-search"></i>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-nav1 d-none d-lg-flex row border-bottom position-relative bg-white">
+          <ul class="d-flex bottom-nav justify-content-between py-3">
+            <li>
+              <a class="link-dark fw-bolder text-decoration-none" href="#">TRENDING</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">JOE BIDEN</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">DONALD TRUMP</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">INAUGURATION</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">CORONAVIRUS</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">STIMULUS PACKAGE</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">VACCINE</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">CAPITOL RIOTS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-nav-sticky row bg-dangerr text-white d-flex align-items-center position-fixed">
+          <div class="col-md-8 col-sm-6 col-5 svg">
+            <svg version="1.1" width="120" height="60" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
+              style="enable-background: new 0 0 395.6 60" xml:space="preserve">
+              <g>
+                <path class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 d-flex justify-content-end">
+            <div class="col-lg-3 d-flex align-items-center justify-content-end">
+              <i class="fas fa-user color-white d-block d-sm-none"></i>
+              <a href="#" class="nav-link px-0 d-none d-sm-inline text-white btn-lg"><strong>LOGIN</strong></a>
+              <button class="subscribe-btn mx-3 bg-warning rounded-pill">
+                SUBSCRIBE
+              </button>
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="row mt-5 d-none d-md-flex">
+      <div class="col-md-5 col-lg-3 mt-2">
+        <h4 class="title">FEATURED STORIES</h4>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <h3>
+            <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+              Most Think He Shouldn't Be Able to
+              Run Again</a>
+          </h3>
+          <div class="summery">
+            The outgoing president has previously alluded to running in 2024,
+            with comments having hinted at feeling he has unfinished business.
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <h3>
+            <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+              Most Think He Shouldn't Be Able to
+              Run Again</a>
+          </h3>
+          <div class="summery">
+            The outgoing president has previously alluded to running in 2024,
+            with comments having hinted at feeling he has unfinished business.
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <h3>
+            <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+              Most Think He Shouldn't Be Able to
+              Run Again</a>
+          </h3>
+          <div class="summery">
+            The outgoing president has previously alluded to running in 2024,
+            with comments having hinted at feeling he has unfinished business.
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <h3>
+            <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+              Most Think He Shouldn't Be Able to
+              Run Again</a>
+          </h3>
+          <div class="summery">
+            The outgoing president has previously alluded to running in 2024,
+            with comments having hinted at feeling he has unfinished business.
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <h3>
+            <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+              Most Think He Shouldn't Be Able to
+              Run Again</a>
+          </h3>
+          <div class="summery">
+            The outgoing president has previously alluded to running in 2024,
+            with comments having hinted at feeling he has unfinished business.
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-7 col-lg-6 mt-2">
+        <div class="order1">
+          <h4 class="title my-2">TOP STORY</h4>
+          <article>
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid" src="./assets/biden-speaks-delaware.webp" alt="Joe Biden" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-3" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+        </div>
+        <div class="culture-stories order5">
+          <h4 class="title my-3">MY TURN</h4>
+          <div class="culture-items d-flex">
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+          </div>
+          <div class="title">CULTURE & TRAVEL</div>
+          <div class="culture-items d-flex">
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-stories order4">
+          <h4 class="title my-3">MORE STORIES</h4>
+          <div class="content1">
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="title my-3">LATEST NEWS</h4>
+          <div class="content2">
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-12 mt-2">
+        <div class="">
+          <div class="debate">
+            <div class="title">THE DEBATE</div>
+            <div class="debate-item debate-border">
+              <div class="flex-sm ai-c d-flex">
+                <div class="image mx-3">
+                  <img src="./assets/10.webp" alt="PP" />
+                </div>
+                <div class="info">
+                  <div class="titlle">
+                    <h6>
+                      <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                        America's Future. Biden
+                        Must Wipe It Out</a>
+                    </h6>
+                  </div>
+                  <div class="byline">
+                    <span>BY</span>
+                    ASTRA TAYLOR
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deco position-relative">
+              <div class="c-vs text-white position-relative rounded-circle text-center bg-dark">
+                VS
+              </div>
+            </div>
+            <div class="debate-item debate-border-bottom">
+              <div class="d-flex justify-content-between">
+                <div class="info">
+                  <div class="titlle">
+                    <h6>
+                      <a class="text-decoration-none link-dark text-wrap" href="#">Biden's Student Loan Forgiveness Will
+                        Make Things
+                        Worse
+                      </a>
+                    </h6>
+                  </div>
+                  <div class="byline">
+                    <span>BY</span>
+                    JIMMY SENGENBERGER
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="./assets/11.webp" alt="PP2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="opinion">
+            <div class="title my-2">OPINION</div>
+            <ul>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex-sm ai-c border-bottom my-2">
+                <div class="debate-item debate-border">
+                  <div class="flex-sm ai-c d-flex">
+                    <div class="image mx-3">
+                      <img src="./assets/10.webp" alt="PP" />
+                    </div>
+                    <div class="info">
+                      <div class="titlle">
+                        <h6>
+                          <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                            America's Future.
+                            Biden Must Wipe It Out</a>
+                        </h6>
+                      </div>
+                      <div class="byline">
+                        <span>BY</span>
+                        ASTRA TAYLOR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column mx-md-5 mx-lg-0">
+            <article class="py-3 mx-md-5 mx-lg-0">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+                </div>
+                <a href="#">
+                  <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+              </div>
+              <div class="border">
+                <h3>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return,
+                    but Most Think He Shouldn't Be
+                    Able to Run Again</a>
+                </h3>
+                <div class="summery">
+                  The outgoing president has previously alluded to running in
+                  2024, with comments having hinted at feeling he has
+                  unfinished business.
+                </div>
+              </div>
+            </article>
+            <div class="bg-light">
+              <div class="d-flex justify-content-center align-middle px-3 pt-3">
+                <span class="icon-n d-block px-3"></span>
+                <h6 class="text-wrap">
+                  START YOUR DAY WITH OUR TOP 5 ARTICLES
+                </h6>
+              </div>
+              <form class="d-flex flex-column align-items-center">
+                <div class="form-group w-75">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="email" class="form-control" placeholder="Enter email" />
+                </div>
+                <button type="submit" class="btn bg-dangerr text-white my-3 w-75">
+                  FREE SIGN UP
+                </button>
+              </form>
+            </div>
+            <article class="py-3 mx-md-5 mx-lg-0">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+                </div>
+                <a href="#">
+                  <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+              </div>
+              <div class="border">
+                <h3>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return,
+                    but Most Think He Shouldn't Be
+                    Able to Run Again</a>
+                </h3>
+                <div class="summery">
+                  The outgoing president has previously alluded to running in
+                  2024, with comments having hinted at feeling he has
+                  unfinished business.
+                </div>
+              </div>
+            </article>
+            <article class="py-3 mx-md-5 mx-lg-0">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+                </div>
+                <a href="#">
+                  <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+              </div>
+              <div class="border">
+                <h3>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return,
+                    but Most Think He Shouldn't Be
+                    Able to Run Again</a>
+                </h3>
+                <div class="summery">
+                  The outgoing president has previously alluded to running in
+                  2024, with comments having hinted at feeling he has
+                  unfinished business.
+                </div>
+              </div>
+            </article>
+            <article class="py-3 mx-md-5 mx-lg-0">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+                </div>
+                <a href="#">
+                  <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+              </div>
+              <div class="border">
+                <h3>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return,
+                    but Most Think He Shouldn't Be
+                    Able to Run Again</a>
+                </h3>
+                <div class="summery">
+                  The outgoing president has previously alluded to running in
+                  2024, with comments having hinted at feeling he has
+                  unfinished business.
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This section is a doublicate of the main section created for acheiving Mobile view ordr -->
+    <div class="row d-md-none d-lg-none mt-5">
+      <div class="col-12 mt-5 gap-4 d-grid bg-light">
+        <div class="order1 bg-white">
+          <h4 class="title my-2">TOP STORY</h4>
+          <article>
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid" src="./assets/biden-speaks-delaware.webp" alt="Joe Biden" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+        </div>
+        <div class="col-md-5 col-lg-3 bg-white">
+          <h4 class="title my-2">FEATURED STORIES</h4>
+          <article class="py-3">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="py-3">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="py-3">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="py-3">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="py-3">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Trump Said He'll Return, but Most
+                Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+        </div>
+        <div class="debate bg-white">
+          <h4 class="title my-2">THE DEBATE</h4>
+          <div class="debate-item debate-border">
+            <div class="flex-sm ai-c d-flex">
+              <div class="image mx-3">
+                <img src="./assets/10.webp" alt="PP" />
+              </div>
+              <div class="info">
+                <div class="titlle">
+                  <h6>
+                    <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon America's
+                      Future. Biden
+                      Must Wipe It Out</a>
+                  </h6>
+                </div>
+                <div class="byline">
+                  <span>BY</span>
+                  ASTRA TAYLOR
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deco position-relative">
+            <div class="c-vs ttext-white position-relative rounded-circle text-center bg-dark">
+              VS
+            </div>
+          </div>
+          <div class="debate-item debate-border-bottom">
+            <div class="flex-sm ai-c d-flex">
+              <div class="info">
+                <div class="titlle">
+                  <h6>
+                    <a class="text-decoration-none link-dark text-wrap" href="#">Biden's Student Loan Forgiveness Will
+                      Make Things Worse
+                    </a>
+                  </h6>
+                </div>
+                <div class="byline">
+                  <span>BY</span>
+                  JIMMY SENGENBERGER
+                </div>
+              </div>
+              <div class="image">
+                <img src="./assets/11.webp" alt="PP2" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opinion">
+          <div class="title">OPINION</div>
+          <ul>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex-sm ai-c border-bottom my-2">
+              <div class="debate-item debate-border">
+                <div class="flex-sm ai-c d-flex">
+                  <div class="image mx-3">
+                    <img src="./assets/10.webp" alt="PP" />
+                  </div>
+                  <div class="info">
+                    <div class="titlle">
+                      <h6>
+                        <a class="text-wrap text-decoration-none link-dark" href="#">Student Debt is a Curse Upon
+                          America's Future.
+                          Biden Must Wipe It Out</a>
+                      </h6>
+                    </div>
+                    <div class="byline">
+                      <span>BY</span>
+                      ASTRA TAYLOR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <div class="more-stories order4 bg-white">
+          <h4 class="title my2">MORE STORIES</h4>
+          <div class="content1">
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">LATEST NEWS</div>
+          <div class="content2">
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+            <div class="clearfix d-flex border-top my-5">
+              <div class="image-float">
+                <img class="mx-2 my-4" src="./assets/migrant-child-us-mexico-border-stranded-trump.webp" alt="child" />
+              </div>
+              <div>
+                <h4>
+                  <a class="text-wrap text-decoration-none link-dark fw-bolder" href="#">Sanders, Warren Warn Senate
+                    Majority Will Be Used in
+                    'Very Aggressive Way'</a>
+                </h4>
+                <div class="summery">
+                  "If we pass [the stimulus package] with 51 votes, we'll pass
+                  it with 51 votes," Vermont Senator Bernie Sanders said in
+                  support of the 'budget reconciliation' process in the
+                  Senate.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="culture-stories order5 bg-white">
+          <h4 class="title my-3">MY TURN</h4>
+          <div class="culture-items d-flex flex-column">
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+            <div class="culture-item px-2 col-lg-4">
+              <div class="image">
+                <a href="#"><img class="img-fluid" src="./assets/marriage-same-sex-marriage-best-friends.webp"
+                    alt="Best Friends" /></a>
+              </div>
+              <div class="info">
+                <a class="text-wrap text-decoration-none link-dark" href="#">'I Married My Best Friend to Avoid
+                  Inheritance Tax'</a>
+              </div>
+            </div>
+          </div>
+          <h4 class="title my-2">CULTURE & TRAVEL</h4>
+          <div class="culture-items d-flex flex-column">
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+            <div class="culture-item col-lg-4 px-2">
+              <div class="wrap position-relative">
+                <div class="category position-absolute bottom-0 start-0 bg-white">
+                  <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+                </div>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/cul-map-happiness-finland.webp" alt="happiness" /></a>
+              </div>
+              <div class="summery">
+                <a class="text-wrap text-decoration-none link-dark" href="#">The Secrets to Happiness Around the
+                  World</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light mt-5">
+          <div class="d-flex justify-content-center align-middle px-3 pt-3">
+            <span class="icon-n d-block px-3"></span>
+            <h6 class="text-wrap">START YOUR DAY WITH OUR TOP 5 ARTICLES</h6>
+          </div>
+          <form class="d-flex flex-column align-items-center">
+            <div class="form-group w-75">
+              <label for="exampleInputEmail1"></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+            </div>
+            <button type="submit" class="btn bg-dangerr text-white my-3 w-75">
+              FREE SIGN UP
+            </button>
+          </form>
+        </div>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+        <article class="py-3">
+          <div class="wrap position-relative">
+            <div class="category position-absolute bottom-0 start-0 bg-white">
+              <a class="text-decoration-none link-info" href="#">SPONSERED INSIGHTS</a>
+            </div>
+            <a href="#">
+              <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+          </div>
+          <div class="border">
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="in-the-magazine">
+      <h4 class="header-editor in-the-magazinee d-flex justify-content-center border-bottom py-3">
+        <span class="icon-n d-block px-3"></span>
+        IN THE MAGAZINE
+      </h4>
+      <div class="upper-part row">
+        <div class="col-lg-12 d-flex flex-column flex-md-row flex-lg-row">
+          <div class="col-12 col-md-3 col-lg-3">
+            <div class="position-relative">
+              <div class="category position-absolute bottom-0 start-0">
+                <a class="bg-white text-decoration-none text-danger p-1" href="#">JANUARY 22 ISSUE</a>
+              </div>
+              <img class="img-fluid" src="./assets/cover-january-22-2021.webp" alt="cover" />
+            </div>
+            <h4 class="bg-light w-100 text-center p-1">
+              <a class="text-decoration-none text-dark" href="#">SEE ALL FEATURES ></a>
+            </h4>
+          </div>
+          <div class="p-1 col-12 col-md-3 col-lg-3">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+          <div class="p-1 col-12 col-md-3 col-lg-3">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+          <div class="p-1 col-12 col-md-3 col-lg-3">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part row">
+        <div class="col-lg-12 d-flex flex-column flex-md-row flex-lg-row">
+          <div class="p-1 m-1">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+          <div class="p-1 m-1">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+          <div class="p-1 m-1">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+          <div class="p-1 m-1">
+            <img class="img-fluid py-3" src="./assets/pro-trump-mob-seizes-capitol.webp" alt="mob" />
+            <div class="d-flex">
+              <h6 class="bg-dangerr text-white p-1 m-1">COVER</h6>
+              <a class="text-danger text-decoration-none p-1 m-1" href="#">NEWS</a>
+            </div>
+            <h5>
+              FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+              the Other Way
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="editors-picks">
+      <h4 class="header-editor in-the-magazinee d-flex justify-content-center border-bottom py-3">
+        <span class="icon-n d-block px-3"></span>
+        EDITOR'S PICKS
+      </h4>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column flex-wrap flex-md-row flex-lg-row">
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column flex-wrap flex-md-row flex-lg-row">
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+          <article class="p-3 col-lg-3 col-md-6 col-12">
+            <div class="wrap position-relative">
+              <div class="category position-absolute bottom-0 start-0 bg-white">
+                <a class="text-decoration-none link-danger" href="#">POLITICS</a>
+              </div>
+              <a href="#">
+                <img class="editor-img img-fluid img-fluid" src="./assets/donald-trump.webp" alt="Donald Trump" /></a>
+            </div>
+            <h3>
+              <a class="text-wrap text-decoration-none link-dark fw-bolder fs-5" href="#">Trump Said He'll Return, but
+                Most Think He Shouldn't Be Able
+                to Run Again</a>
+            </h3>
+            <div class="summery">
+              The outgoing president has previously alluded to running in
+              2024, with comments having hinted at feeling he has unfinished
+              business.
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="row">
+        <div class="header text-danger border-top py-3">
+          <h3>U.S.</h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header text-danger border-top py-3">
+          <h3>U.S.</h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header text-danger border-top py-3">
+          <h3>U.S.</h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header text-danger border-top py-3">
+          <h3>U.S.</h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header text-danger border-top py-3">
+          <h3>U.S.</h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img class="img-fluid" src="./assets/vanderburgh-john-keown.webp" alt="man" />
+          <h4>
+            <a class="text-decoration-none link-dark fw-bolder" href="#">Indiana Homeless Man Chooses to Be Arrested to
+              Avoid Cold
+              Weather</a>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+          <div class="d-flex py-2 border-bottom py-2">
+            <img class="bottom-section-img px-1" src="assets/tiger-wild-animal-sanctuary-colorado.webp" alt="tiger" />
+            <h4>
+              <a class="text-decoration-none link-dark fw-bolder" href="#">'Tiger King' Zoo Owners Ordered To Hand Over
+                Big Cats to
+                Government</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe-newsletter">
+      <div class="row">
+      <div class="col-lg-7">
+        <div class="header text-danger">SUBSCRIBE</div>
+        <div class="d-flex flex-column flex-md-row flex-lg-row py-5 align-items-md-center bg-light m-lg-3">
+          <div class="position-relative px-1 align-self-center col-md-5">
+            <img class="img-fluid" src="./assets/january-15-2021-cover.jpg" alt="trump">
+            <img class="img-fluid position-absolute top-0 start-50" src="./assets/cover-january-22-2021.jpg" alt="capitol">
+          </div>
+          <div class="d-flex flex-column col-md-7 ps-md-5 px-lg-6">
+            <h4 class="px-lg-3">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+            <p class="px-lg-3">All Access + Weekly Delivery.
+            Choose A Membership That's Perfect for You!</p>
+            <button class="btn mx-lg-3 bg-dangerr text-white w-50 align-self-center align-self-md-start align-self-lg-start">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="header text-danger">NEWSLETTER</div>
+        <div class="d-flex flex-column border flex-md-row flex-lg-row align-items-center">
+          <div class="col-12 col-md-6 col-lg-6 mx-0 px-0 photo-large-screen">
+              <img class="img-fluid col-12 photo-large-screen" src="./assets/2.png" alt="">
+          </div>
+          <div class="d-flex flex-column px-1 col-12 col-md-6 col-lg-6 align-items-md-center align-self-md-start py-md-5 py-lg-0">
+            <h3 class="align-self-center">The Starting 5</h3>
+            <p class="px-3">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+            <form class="d-flex flex-row flex-md-row flex-lg-column align-items-center">
+              <div class="form-group w-75 align-self-start align-self-lg-center">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" class="form-control" placeholder="Enter email" />
+              </div>
+              <button type="submit" class="btn bg-dangerr text-white my-lg-2  w-75 align-self-end align-self-lg-center fs-6">
+                FREE SIGN UP
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row border-bottom py-3 d-flex position-relative">
+        <div class="col-12 d-flex flex-column flex-sm-column flex-md-row justify-content-between">
+          <div class="d-flex flex-column flex-sm-column flex-md-row">
+            <svg version="1.1" width="236" height="60" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
+              style="enable-background: new 0 0 395.6 60" xml:space="preserve">
+              <g>
+                <path class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                </path>
+              </g>
+            </svg>
+            <span class="align-self-md-end align-self-sm-start">
+              © 2021 NEWSWEEK DIGITAL LLC</span>
+          </div>
+          <div class="footer-icons align-self-md-end align-self-lg-end">
+            <ul class="d-flex">
+              <li>
+                <a class="link-secondary mx-2" href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a class="link-secondary mx-2" href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a class="link-secondary mx-2" href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a class="link-secondary mx-2" href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <ul class="d-flex flex-wrap">
+            <li>Edition:</li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">U.S edition</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">日本</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Pakistan</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Polska</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">România</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul class="d-flex flex-wrap">
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Corrections</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Editorial Guidelines</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Advertise</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Copyright</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Cookie Policy</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Terms of Sale</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Archive</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none px-1" href="#">Announcements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/afced7e812.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

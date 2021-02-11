@@ -1,0 +1,128 @@
+/* GENERAL */
+body {
+  height: 3000px;
+}
+
+.container-fluid {
+  max-width: 1310px;
+  overflow-x: hidden;
+}
+
+.icon-n {
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+.svg {
+  fill: white;
+}
+
+.subscribe-btn {
+  width: 200px;
+}
+
+a {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NAV BAR  */
+.top-nav1 {
+  z-index: 6;
+}
+
+.bottom-nav-sticky {
+  width: 100%;
+  max-width: 1310px;
+  top: 0;
+  z-index: 5;
+}
+
+.fab {
+  font-size: 30px;
+}
+
+footer svg {
+  fill: red;
+}
+
+.bg-dangerr {
+  background-color: red;
+}
+
+footer {
+  z-index: 1;
+}
+
+.image-float img {
+  width: 100px;
+  height: 90px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 575.98px) {
+  .subscribe-btn,
+  .with-small a {
+    width: 80px;
+    font-size: 0.7rem;
+  }
+
+  .with-small {
+    font-size: 0.7rem;
+  }
+}
+
+/* VS Icon */
+
+.deco::before {
+  top: calc(50% - 2px);
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.deco::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  top: calc(50% - 2px);
+}
+
+.c-vs {
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  font: bold 14px/32px "Roboto Condensed", sans-serif;
+  margin: 6px auto;
+}
+
+.debate-item .image img,
+.opinion .image img {
+  width: 63px;
+}
+
+.bottom-section-img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 992px) {
+  .photo-large-screen {
+    height: 335px;
+  }
+}
